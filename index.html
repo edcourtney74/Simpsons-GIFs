@@ -9,7 +9,39 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 <body>
+    <!-- Title bar displayed here -->
+    <div class="container-fluid-nav text-center py-2"><h1>Simpsons GIFs</h1>
+    </div>
+            
+    <div class="container">
+         
+        <!-- Character buttons displayed here - all the way across screen -->
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+        <!-- GIFs displayed here -->
+            <div class="col-md-9" id="GIF-display">GIFs here
+            </div>
     
+        <!-- Brief instructions here -->
+            <div class="col-md-3">
+                <p>Click on one of the Simpsons character buttons to see some of their most popular GIFs.
+                Don't see everyone you want? Enter a character in the box below and click on the new button that appears.
+                </p>
+
+        <!-- User can add a character here -->
+                <form>
+                    <input type="text" class="form-control" placeholder="Enter a character">
+                    <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 <!-- Javascript links -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
