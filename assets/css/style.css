@@ -1,6 +1,19 @@
+body {
+    background-image: url("../images/simpsons-background.jpg");
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Rock Salt', cursive;
+}
 .container-fluid-nav {
-    background-color: skyblue;
     color: yellow;
+}
+
+.instructions-box {
+    background-color: yellow;
+    opacity: .6;
+    height: 370px;
 }
 
 #intro-text {
