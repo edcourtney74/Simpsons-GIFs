@@ -3,6 +3,6 @@
     color: yellow;
 }
 
-#GIF-display {
-    border-right: gray solid thin;
+#intro-text {
+    border: gray thin solid;
 }

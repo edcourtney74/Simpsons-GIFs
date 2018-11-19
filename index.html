@@ -15,32 +15,31 @@
             
     <div class="container">
          
-        <!-- Character buttons displayed here - all the way across screen -->
+        <!-- Character buttons displayed -->
         <div class="row">
-            <div class="col-md-12 mt-3" id="character-list">                
+            <div class="col-md-9 mt-3">
+                <div id="character-list">                    
+                </div>                
+                
+                <!-- GIFs displayed here -->
+                <div id="GIF-display">
+                </div> 
             </div>
-        </div>
+            <!-- Brief instructions here -->
+            <div class="col-md-3 mt-3">
+                <p>Click on one of the Simpsons character buttons to see some of their most popular GIFs.</p>
+                <p>Then click on the image to get it moving</p>
+                <p>Don't see everyone you want? Submit a character in the box below and then click the new button</p>
 
-        <div class="row mt-5">
-        <!-- GIFs displayed here -->
-            <div class="col-md-9" id="GIF-display">
-            </div>
-    
-        <!-- Brief instructions here -->
-            <div class="col-md-3">
-                <p>Click on one of the Simpsons character buttons to see some of their most popular GIFs.
-                Don't see everyone you want? Enter a character in the box below and click on the new button that appears.
-                </p>
-
-        <!-- User can add a character here -->
+                <!-- User can add a character here -->
                 <form>
-                    <input type="text" class="form-control" placeholder="Enter a character">
-                    <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+                    <input type="text" class="form-control" id="character-input" placeholder="Enter a character">
+                    <button type="submit" class="create-character btn btn-primary btn-sm mt-2">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-
+    
 <!-- Javascript links -->
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
