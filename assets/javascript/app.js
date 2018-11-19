@@ -59,9 +59,9 @@ function sendRequest() {
         for (let x = 0; x < res.data.length; x++) {
             
             // Create div for each GIF
-            // var divGIF = $("<div>");
+            var divGIF = $("<div>");
 
-            // Crete img element to hold GIF
+            // Create img element to hold GIF
             var image = $("<img>");
 
             // Create the still GIF URL for img element
@@ -79,9 +79,21 @@ function sendRequest() {
             // Add data-state element to img element, set to still
             image.attr("data-state", "still");
 
-            // Display image on HTML
+            // Add class to img element to apply Bootstrap styling to images
+            image.addClass("m-2");
+
+            // Display image in HTML
             $("#GIF-display").append(image);
 
+            // Store rating data in a variable
+            var rating = res.data[x].rating;
+
+            // Create element to store rating data
+            var ratingData = $("<p>").text("Rating: " + rating);
+
+            // Add rating data to display in HTML
+            $("#GIF-display").append(ratingData);
+            
 
 
 
