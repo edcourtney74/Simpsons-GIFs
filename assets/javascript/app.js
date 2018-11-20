@@ -50,8 +50,7 @@ $(document).ready(function () {
         //Set queryURL variable needed for API request
         // Also sets limit of 10 and rating of up to PG-13 
         queryURL = "https://api.giphy.com/v1/gifs/search?q=simpsons+" + searchName + "&api_key=CEnxMFTt8LQl5mNY8uF0N6NKduTtPcgK&limit=10&rating=pg-13";
-        console.log("Query URL: " + queryURL);
-
+     
         // Send AJAX request according to button pressed
         $.ajax({
             url: queryURL,
@@ -60,9 +59,6 @@ $(document).ready(function () {
             console.log(res);
             // Create for loop to go through all 10 items in response array
             for (let x = 0; x < res.data.length; x++) {
-
-                // Create div for each GIF
-                var divGIF = $("<div>");
 
                 // Create img element to hold GIF
                 var image = $("<img>");
@@ -86,18 +82,18 @@ $(document).ready(function () {
                 image.attr("width", "100%")
 
                 // Add class to img element to apply Bootstrap styling to images
-                // Add class for animate click function
+                // Add gif class to animate GIFs
                 image.addClass("image-fluid gif");
 
-                // Set display variable based on x value
+                // Set display variable based on x value - this will put GIF in right spot
+                // of Bootstrap layout
                 var gifPlacement = $("#gif" + x);
-                console.log(gifPlacement)
                 
                 // Display image in HTML
                 gifPlacement.append(image);
 
-                // Store rating data in a variable
-                var rating = res.data[x].rating;
+                // Store rating data in a variable, change to upper case
+                var rating = res.data[x].rating.toUpperCase();
 
                 // Create element to store rating data
                 var ratingData = $("<p>").text("Rating: " + rating);
@@ -151,45 +147,20 @@ $(document).ready(function () {
         
         // Create variable containing user submission
         var userChoice = $("#character-input").val().trim();
-        console.log(userChoice);
 
         // Push user submission to characters array
         characters.push(userChoice);
-        console.log(characters);
         
         // Call createButton to add buttons to the screen, including the new one 
         createButton();
 
-        // Sets searchName to user submission in order to run sendRequest
-        // Removes non-alphanumeric characters, replaces with &
-        // searchName = userChoice.replace(/[^A-Z0-9]/ig, "&")
-
-        // Call sendRequest to get API, display GIFs for new entry
-        // sendRequest();
-
     })
 
     // PAGE STARTUP=============================================================  
+    // Will display buttons on page load
     createButton();
 
 });
-
-
-
-
-
-
-
-// GIF begins or stops animation on GIF button click
-
-// Display rating of each GIF
-
-
-
-
-
-
-
 
 
 
