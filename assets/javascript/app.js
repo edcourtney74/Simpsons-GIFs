@@ -82,12 +82,19 @@ $(document).ready(function () {
                 // Add data-state element to img element, set to still
                 image.attr("data-state", "still");
 
+                // Add width of 100% to image
+                image.attr("width", "100%")
+
                 // Add class to img element to apply Bootstrap styling to images
                 // Add class for animate click function
-                image.addClass("m-2 gif");
+                image.addClass("image-fluid gif");
 
+                // Set display variable based on x value
+                var gifPlacement = $("#gif" + x);
+                console.log(gifPlacement)
+                
                 // Display image in HTML
-                $("#GIF-display").append(image);
+                gifPlacement.append(image);
 
                 // Store rating data in a variable
                 var rating = res.data[x].rating;
@@ -96,7 +103,7 @@ $(document).ready(function () {
                 var ratingData = $("<p>").text("Rating: " + rating);
 
                 // Add rating data to display in HTML
-                $("#GIF-display").append(ratingData);
+                gifPlacement.append(ratingData);
             }
         })
     };
@@ -106,7 +113,7 @@ $(document).ready(function () {
     // Click function to display GIFs
     $(document).on("click", ".gif-selection", function () {
         // Removes previous GIFs displayed
-        $("#GIF-display").empty();
+        $(".gif-remove").empty();
 
         // Retrieves value of "data-name" to use in queryURL
         searchName = $(this).attr("data-name");
