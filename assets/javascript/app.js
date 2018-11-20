@@ -78,8 +78,8 @@ $(document).ready(function () {
                 // Add data-state element to img element, set to still
                 image.attr("data-state", "still");
 
-                // Add width of 100% to image
-                image.attr("width", "100%")
+                // Add class of gif-width to size images
+                image.attr("width", "100%");
 
                 // Add class to img element to apply Bootstrap styling to images
                 // Add gif class to animate GIFs
@@ -153,6 +153,9 @@ $(document).ready(function () {
         
         // Call createButton to add buttons to the screen, including the new one 
         createButton();
+
+        // Puts "Enter a character" text back into input box
+        $("#character-input").val("Enter a character");
 
     })
 

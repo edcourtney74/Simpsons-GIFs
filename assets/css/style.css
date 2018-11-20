@@ -7,6 +7,10 @@ h1 {
     font-family: 'Rock Salt', cursive;
 }
 
+.container {
+    max-width: 100%;
+
+}
 .container-fluid-nav {
     color: yellow;
 }
