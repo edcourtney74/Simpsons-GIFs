@@ -13,13 +13,13 @@ This site gives the user quick, easy access to all the most popular Simpsons GIF
   * Ratings are shown below each GIF.   
   ***
 ### Desktop view -search and top two GIFs
-![Desktop top photo](https://github.com/edcourtney74/Simpsons-GIFs/master/assets/images/desktop-top.png "Desktop screen")
+![Desktop top photo](https://github.com/edcourtney74/Simpsons-GIFs/blob/master/assets/images/desktop-top.png "Desktop screen")
 
 ### Desktop view - smaller display rows
-![Desktop bottom photo](https://github.com/edcourtney74/Simpsons-GIFs/master/assets/images/desktop-bottom.png "Desktop screen")
+![Desktop bottom photo](https://github.com/edcourtney74/Simpsons-GIFs/blob/master/assets/images/desktop-bottom.png "Desktop screen")
 
 ### Mobile view - search and character buttons
-![Mobile top photo](https://github.com/edcourtney74/Simpsons-GIFs/master/assets/images/mobile-top.png "Mobile screen")
+![Mobile top photo](https://github.com/edcourtney74/Simpsons-GIFs/blob/master/assets/images/mobile-top.png "Mobile screen")
 
 ### Mobile view - GIF display
-![Mobile bottom photo](https://github.com/edcourtney74/Simpsons-GIFs/master/assets/images/mobile-bottom.png "Mobile screen")
+![Mobile bottom photo](https://github.com/edcourtney74/Simpsons-GIFs/blob/master/assets/images/mobile-bottom.png "Mobile screen")
